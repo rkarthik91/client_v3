@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Prelocation">
+    tools:context=".Prelocation"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#efefef">
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
-            android:text="Select options below for image upload"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Select options below for image upload"
+        android:textStyle="bold"/>
 
         <Button
             android:id="@+id/button2"
@@ -28,33 +25,36 @@
             android:layout_marginBottom="50dp"
             android:onClick="transferlocation"
             android:text="Capture image and upload"
-            app:layout_constraintBottom_toTopOf="@+id/button3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:background="#3b54e2"
+            android:textColor="#ffffff" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
-            android:text="Upload from the gallery"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="323dp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="#3b54e2"
+        android:onClick="transferlocation1"
+        android:text="Upload from the gallery"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="323dp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
-            android:text="STATUS:LOCATION CAPTURE SUCCESSFUL"
+            android:text="\u2713 STATUS:LOCATION CAPTURE SUCCESSFUL"
             tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="473dp" />
+            tools:layout_editor_absoluteY="473dp"
+            android:textStyle="bold"
+            android:textColor="#65c965" />
 
         <TextView
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+            android:text="TextView"
+            android:textColor="#c9161f" />
+</LinearLayout>

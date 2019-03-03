@@ -12,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#3b54e2"
+        android:textColor="#ffffff"
         android:text="@string/get_location"
-        android:textColor="#ffffff" />
+        />
 
     <android.support.constraint.Barrier
         android:id="@+id/barrier"
