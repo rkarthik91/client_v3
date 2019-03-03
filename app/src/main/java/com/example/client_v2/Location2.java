@@ -45,13 +45,10 @@ public class Location2 extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_main);
 
         imagetoupload=(ImageView)findViewById(R.id.imageToUpload);
-        imagetodownload=(ImageView)findViewById(R.id.downloadImage);
 
         bUpload=(Button)findViewById(R.id.bUploaadImage);
-        bDownload=(Button)findViewById(R.id.bDownloadImage);
 
         uploadName=(EditText)findViewById(R.id.etUploadName);
-        downloadName=(EditText)findViewById(R.id.downloadName);
 
         imagetoupload.setOnClickListener(this);
         bUpload.setOnClickListener(this);
@@ -70,9 +67,6 @@ public class Location2 extends AppCompatActivity implements View.OnClickListener
             case R.id.bUploaadImage:
                 Bitmap image=((BitmapDrawable) imagetoupload.getDrawable()).getBitmap();
                 new UploadImage(image,uploadName.getText().toString()).execute();
-                break;
-            case R.id.bDownloadImage:
-
                 break;
 
         }

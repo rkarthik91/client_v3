@@ -16,6 +16,7 @@ public class Prelocation extends AppCompatActivity {
         Intent intent=  getIntent();
         message=intent.getStringExtra("EXTRA_MESSAGE");
         TextView view=findViewById(R.id.location);
+        view.setText(message);
 
     }
     public void transferlocation(View view)
@@ -26,7 +27,7 @@ public class Prelocation extends AppCompatActivity {
     }
     public void transferlocation1(View view)
     {
-        Intent intent=new Intent(this, Location1.class);
+        Intent intent=new Intent(this, Location2.class);
         intent.putExtra("EXTRA_MESSAGE",message);
         startActivity(intent);
     }
