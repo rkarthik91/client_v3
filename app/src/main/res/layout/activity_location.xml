@@ -22,7 +22,9 @@
             android:layout_gravity="center"
             android:layout_weight="0"
             android:onClick="dispatchTakePictureIntent"
-            android:text="Click Picture" >
+            android:text="Capture Image"
+            android:textColor="#ffffff"
+            android:background="#3b54e2">
         </Button>
 
         <Button
@@ -30,6 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:onClick="uploadImage"
-            android:text="Upload" />
+            android:text="Upload"
+            android:textColor="#ffffff"
+            android:background="#3b54e2"/>
 
     </LinearLayout>
